@@ -13,7 +13,7 @@ st.title("Car Brand Model Classifier")
 file=st.file_uploader("Choose a photo from your computer",type=["jpg","png"])
 
 def import_and_predict(image_data,model):
-    size=(256,256)
+    size=(224,224)
     image = ImageOps.fit(image_data,size, Image.LANCZOS)
     image = np.asarray(image)
     image = image / 255.0
