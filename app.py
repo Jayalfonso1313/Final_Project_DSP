@@ -46,4 +46,4 @@ else:
     if is_correct_prediction:
         st.success("Prediction is correct!")
     else:
-        st.error("Prediction is incorrect.")
+        st.error("Prediction is incorrect. Actual class not in the list.")
