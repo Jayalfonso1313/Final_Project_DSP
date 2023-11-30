@@ -40,8 +40,10 @@ else:
     is_correct_prediction = verify_prediction(actual_class_name, predicted_class_name)
 
     # Display the result
-    st.success(f"OUTPUT: {predicted_class_name}")
+    st.success(f"Predicted Car Model: {predicted_class_name}")
+    st.success(f"Actual Car Model: {actual_class_name}")
+
     if is_correct_prediction:
         st.success("Prediction is correct!")
     else:
-        st.error(f"Prediction is incorrect. Actual class: {actual_class_name}")
+        st.error("Prediction is incorrect.")
