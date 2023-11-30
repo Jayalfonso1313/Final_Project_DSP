@@ -40,7 +40,7 @@ else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
     prediction = import_and_predict(image, model)
-    actual_class_name = "Daiatsu_Hijet"  # Replace with the actual class name for the given image
+    actual_class_name = 'Daiatsu_Code'  # Replace with the correct actual class name for the given image
 
     predicted_class_name, verification_result = verify_prediction(prediction, actual_class_name)
 
